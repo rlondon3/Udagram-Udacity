@@ -12,12 +12,25 @@ jobs:
       - checkout
       - aws-cli/setup
       - eb/setup
+      https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+      - run:
+          name: Install Node version 14 using NVM
+          command: nvm install 14 
+      - run:
+          name: Use Node version 14
+          command: nvm use 14
       - run:
           name: Install Front-End Dependencies
           command: npm run frontend:install
       - run:
           name: Front-End Build
           command: npm run frontend:build
+      - run:
+          name: Install Node version 12 using NVM
+          command: nvm install 12 
+      - run:
+          name: Use Node version 12 
+          command: nvm use 12
       - run:
           name: Install Back-End Dependencies
           command: npm run backend:install
