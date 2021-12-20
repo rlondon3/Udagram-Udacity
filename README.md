@@ -10,13 +10,12 @@ Hosting Udagram with Amazon Web Services:
 -S3 for hosting frontend and posts<br>
 -Elastic Beanstalk for hosting the API<br>
 
-Deployment with CircleCi:
-Updating the main branch immediately creates a build and deploys the code.
+Deployment with CircleCi:<br>
+Updating the main branch immediately creates a build and deploys the code.<br>
 
 Set Up Udagram-Udacity locally:
-
-Running Udagram locally:
--Run npm install to download the necessary dependencies.
+<br>
+-Run npm install to download the necessary dependencies.<br>
 -Create a .env file to be nested in the udagram-api folder using:
 <br>
 AWS_ACCESS_KEY_ID<br>
