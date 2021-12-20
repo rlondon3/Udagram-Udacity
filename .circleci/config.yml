@@ -16,9 +16,9 @@ jobs:
             export NVM_DIR=$HOME/.nvm
             touch $HOME/.nvmrc
             source $NVM_DIR/nvm.sh
-            # Use node 8.9
-            nvm install 8.9 && nvm alias default 8.9
-            echo 8.9 > $HOME/.nvmrc
+            # Use node 14
+            nvm install 14 && nvm alias default 14
+            echo 14 > $HOME/.nvmrc
             # Enable nvm in following steps
             echo 'export NVM_DIR=$HOME/.nvm' >> $BASH_ENV
             echo 'source $NVM_DIR/nvm.sh' >> $BASH_ENV
