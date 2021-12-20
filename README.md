@@ -2,20 +2,22 @@ Udagram-Udacity: This Udagram application was provided by Udacity.
 ====================
 Hosting link <br>
 http://frontendings.s3-website-us-east-1.amazonaws.com
---------------
+___________________________________
 
 Hosting Udagram with Amazon Web Services:
-___________________________________
-S3 (udagram-frontend) was used for hosting and posts
-Elastic Beanstalk was used for the API (udagram-api)
-RDS was used for the PostgreSQL database
-The second goal of this project was to connect it with CircleCI. Any time this project's main branch is updated then the available application is immediately updated so that users get the latest and greatest features of Udagram.
+<br>
+-RDS used for a PostgreSQL database
+-S3 for hosting frontend and posts
+-Elastic Beanstalk for hosting the API
 
-Installation
-Run npm install to download the necessary dependencies.
+Deployment with CircleCi:
+Updating the main branch immediately creates a build and deploys the code.
 
-Running Udagram locally
-You will need to create a .env file in udagram-api with the following variables set:
+Set Up Udagram-Udacity locally:
+
+Running Udagram locally:
+-Run npm install to download the necessary dependencies.
+-Create a .env file to be nested in the udagram-api folder using:
 
 AWS_ACCESS_KEY_ID
 AWS_DEFAULT_REGION
@@ -28,9 +30,11 @@ POSTGRES_PORT
 POSTGRES_USERNAME
 PORT
 URL
-Open 2 terminal windows:
 
-Navigate to udagram-api and run npm run dev
-Navigate to udagram-frontend and run npm run start
-Open http://localhost:4200 in the browser.
+In the terminal navigate to udagram-api:
+-Run npm run dev
+Navigate to udagram-frontend:
+-Run npm run start
+
+Application will run on http://localhost:4200 in the browser.
 
