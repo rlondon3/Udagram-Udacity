@@ -1,7 +1,7 @@
 Udagram-Udacity: This Udagram application was provided by Udacity.
 ====================
 Hosting link
-+++++++++++++++++++++
+--------------
 APPLICATION: 
 http://frontendings.s3-website-us-east-1.amazonaws.com
 
