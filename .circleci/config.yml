@@ -27,10 +27,10 @@ jobs:
             npm install -g npx webpack webpack-cli jest
             node --version
             npm --version
-      - run: npm install
       - checkout
       - aws-cli/setup
       - eb/setup
+      
       - run:
           name: Get and install node version manager.
           command: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
