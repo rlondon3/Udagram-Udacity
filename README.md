@@ -37,4 +37,8 @@ Navigate to udagram-frontend:
 -Run npm run start
 
 Application will run on http://localhost:4200 in the browser.
+____
+CIRCLE CI
+[![CircleCI](https://circleci.com/gh/rlondon3/Udagram-Udacity/tree/main.svg?style=svg)](https://circleci.com/gh/rlondon3/Udagram-Udacity/tree/main)
+____
 
