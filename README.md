@@ -1,13 +1,45 @@
-# Hosting a Full-Stack Application
+Udagram-Udacity: This Udagram application was provided by Udacity.
+====================
+Hosting link <br>
+http://frontendings.s3-website-us-east-1.amazonaws.com
+___________________________________
 
-### **You can use you own project completed in previous courses or use the provided Udagram app for completing this final project.**
+Hosting Udagram with Amazon Web Services:
+<br>
+-RDS used for a PostgreSQL database<br>
+-S3 for hosting frontend and posts<br>
+-Elastic Beanstalk for hosting the API<br>
 
----
+Deployment with CircleCi:<br>
+Updating the main branch immediately creates a build and deploys the code.<br>
 
-In this project you will learn how to take a newly developed Full-Stack application built for a retailer and deploy it to a cloud service provider so that it is available to customers. You will use the aws console to start and configure the services the application needs such as a database to store product information and a web server allowing the site to be discovered by potential customers. You will modify your package.json scripts and replace hard coded secrets with environment variables in your code.
+Set Up Udagram-Udacity locally:
+<br>
+-Run npm install to download the necessary dependencies.<br>
+-Create a .env file to be nested in the udagram-api folder using:
+<br>
+<br>
+AWS_ACCESS_KEY_ID<br>
+AWS_DEFAULT_REGION<br>
+AWS_SECRET_ACCESS_KEY<br>
+JWT_SECRET<br>
+POSTGRES_DB<br>
+POSTGRES_HOST<br>
+POSTGRES_PASSWORD<br>
+POSTGRES_PORT<br>
+POSTGRES_USERNAME<br>
+PORT<br>
+URL<br>
 
-After the initial setup, you will learn to interact with the services you started on aws and will deploy manually the application a first time to it. As you get more familiar with the services and interact with them through a CLI, you will gradually understand all the moving parts.
+In the terminal navigate to udagram-api:<br>
+-Run npm run dev<br><br>
+Navigate to udagram-frontend:<br>
+-Run npm run start<br><br>
 
-You will then register for a free account on CircleCi and connect your Github account to it. Based on the manual steps used to deploy the app, you will write a config.yml file that will make the process reproducible in CircleCi. You will set up the process to be executed automatically based when code is pushed on the main Github branch.
+Application will run on http://localhost:4200 in the browser.
+____
+CIRCLE CI
+[![CircleCI](https://circleci.com/gh/rlondon3/Udagram-Udacity/tree/main.svg?style=svg)](https://circleci.com/gh/rlondon3/Udagram-Udacity/tree/main)
 
-The project will also include writing documentation and runbooks covering the operations of the deployment process. Those runbooks will serve as a way to communicate with future developers and anybody involved in diagnosing outages of the Full-Stack application.
+____
+
