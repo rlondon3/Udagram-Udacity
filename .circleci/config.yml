@@ -27,7 +27,7 @@ jobs:
             npm install -g npx webpack webpack-cli jest
             node --version
             npm --version
-      - run: npm install
+      - run: npm run install
       - checkout
       - aws-cli/setup
       - eb/setup
