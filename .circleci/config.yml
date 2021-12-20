@@ -8,10 +8,6 @@ jobs:
     docker:
       - image: 'cimg/base:stable'
     steps:
-      - node/install 14
-      - checkout
-      - aws-cli/setup
-      - eb/setup
       - run:
           name: Get and install node version manager.
           command: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
@@ -21,9 +17,9 @@ jobs:
       - run:
           name: Use Node version 14
           command: nvm use 14.15.5
-      - run:
-          name: Check current version of node
-          command: node -v
+      - checkout
+      - aws-cli/setup
+      - eb/setup
       - run:
           name: Install Front-End Dependencies
           command: npm run frontend:install
