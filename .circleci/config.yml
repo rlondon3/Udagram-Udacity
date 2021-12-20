@@ -12,6 +12,11 @@ jobs:
           name: Get and install node version manager.
           command: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
       - run:
+          name: Load NVM
+          command: export NVM_DIR="$HOME/.nvm"
+          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+          [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+      - run:
           name: Install Node version 14 using NVM
           command: nvm install 14.15.5
       - run:
@@ -44,3 +49,6 @@ jobs:
       - run:
           name: Deploy Frontend Application
           command: npm run frontend:deploy
+
+
+
