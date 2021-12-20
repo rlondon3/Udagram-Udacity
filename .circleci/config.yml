@@ -16,8 +16,8 @@ jobs:
             export NVM_DIR=$HOME/.nvm
             touch $HOME/.nvmrc
             source $NVM_DIR/nvm.sh
-            # Use node 14.15.5
-            nvm install 14.15.5 && nvm alias default 14.15.5
+            # Use node 8.9
+            nvm install 8.9 && nvm alias default 8.9
             echo 8.9 > $HOME/.nvmrc
             # Enable nvm in following steps
             echo '[ -s "$HOME/.bashrc" ] && \. "$HOME/.bashrc"' >> $HOME/.bash_profile
@@ -28,7 +28,6 @@ jobs:
             node --version
             npm --version
       - run: npm install
-      - checkout
       - aws-cli/setup
       - eb/setup
       - run:
