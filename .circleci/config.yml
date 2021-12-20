@@ -4,6 +4,7 @@ orbs:
   aws-cli: circleci/aws-cli@2.0.3
   eb: circleci/aws-elastic-beanstalk@2.0.1
 jobs:
+<<<<<<< HEAD
   build:
     docker:
       - image: 'cimg/base:stable'
@@ -45,3 +46,38 @@ jobs:
       - run:
           name: Deploy Frontend Application
           command: npm run frontend:deploy
+=======
+    build:
+      docker:
+        - image: 'cimg/base:stable'
+      steps:
+        - node/install
+        - checkout
+        - aws-cli/setup
+        - eb/setup
+        - run:
+            name: Install Front-End Dependencies
+            command: npm run frontend:install
+        
+        - run:
+            name: Front-End Build
+            command: npm run frontend:build
+        - run:
+            name: Install Node version 12 using NVM
+            command: nvm install 12
+        - run:
+            name: Use Node version 12
+            command: nvm use 12.22.7
+        - run:
+            name: Install Back-End Dependencies
+            command: npm run backend:install
+        - run:
+            name: Back-End Build
+            command: npm run backend:build
+        - run:
+            name: Deploy Backend Application
+            command: npm run backend:deploy
+        - run:
+            name: Deploy Frontend Application
+            command: npm run frontend:deploy
+>>>>>>> 948bd13038e8f10f7522473d54389246d585d705
