@@ -22,9 +22,9 @@ jobs:
       wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
       export NVM_DIR="$HOME/.nvm"
       [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-    source "$NVM_DIR/bash_completion"  && \. "$NVM_DIR/bash_completion"
-      nvm install v14
-      nvm alias default 14.15.5
+    [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+      nvm install v12
+      nvm alias default 12.19.0
       - run:
           name: Front-End Build
           command: npm run frontend:build
