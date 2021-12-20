@@ -18,18 +18,18 @@ Set Up Udagram-Udacity locally:
 Running Udagram locally:
 -Run npm install to download the necessary dependencies.
 -Create a .env file to be nested in the udagram-api folder using:
-
-AWS_ACCESS_KEY_ID
-AWS_DEFAULT_REGION
-AWS_SECRET_ACCESS_KEY
-JWT_SECRET
-POSTGRES_DB
-POSTGRES_HOST
-POSTGRES_PASSWORD
-POSTGRES_PORT
-POSTGRES_USERNAME
-PORT
-URL
+<br>
+AWS_ACCESS_KEY_ID<br>
+AWS_DEFAULT_REGION<br>
+AWS_SECRET_ACCESS_KEY<br>
+JWT_SECRET<br>
+POSTGRES_DB<br>
+POSTGRES_HOST<br>
+POSTGRES_PASSWORD<br>
+POSTGRES_PORT<br>
+POSTGRES_USERNAME<br>
+PORT<br>
+URL<br>
 
 In the terminal navigate to udagram-api:
 -Run npm run dev
