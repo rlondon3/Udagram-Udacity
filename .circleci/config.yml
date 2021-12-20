@@ -13,21 +13,9 @@ jobs:
         - aws-cli/setup
         - eb/setup
         - run:
-      name: Swap node versions
-      command:
-        set +e
-        wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
-        export NVM_DIR="$HOME/.nvm"
-        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-        [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-        nvm install v14
-        nvm alias default 14.15.5
-
-        echo 'export NVM_DIR="$HOME/.nvm"' >> $BASH_ENV
-        echo '[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"' >> $BASH_ENV
-        - run:
             name: Install Front-End Dependencies
             command: npm run frontend:install
+        
         - run:
             name: Front-End Build
             command: npm run frontend:build
