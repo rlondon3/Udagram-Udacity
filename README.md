@@ -6,9 +6,9 @@ ___________________________________
 
 Hosting Udagram with Amazon Web Services:
 <br>
--RDS used for a PostgreSQL database
--S3 for hosting frontend and posts
--Elastic Beanstalk for hosting the API
+-RDS used for a PostgreSQL database<br>
+-S3 for hosting frontend and posts<br>
+-Elastic Beanstalk for hosting the API<br>
 
 Deployment with CircleCi:
 Updating the main branch immediately creates a build and deploys the code.
