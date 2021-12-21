@@ -2,8 +2,8 @@ Udagram-Udacity: This Udagram application was provided by Udacity.
 ====================
 Hosting link <br>
 http://frontendings.s3-website-us-east-1.amazonaws.com <br>
-**PROJECT NO LONGER HOSTED** <br>
-**RUN IN LOCAL ENVIRONMENT**
+**PROJECT NO LONGER HOSTED!** <br>
+**RUN IN LOCAL ENVIRONMENT!**
 ___________________________________
 
 Hosting Udagram with Amazon Web Services:
