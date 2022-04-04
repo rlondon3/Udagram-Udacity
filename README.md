@@ -42,6 +42,9 @@ Application will run on http://localhost:4200 in the browser.
 ____
 CIRCLE CI
 [![CircleCI](https://circleci.com/gh/rlondon3/Udagram-Udacity/tree/main.svg?style=svg)](https://circleci.com/gh/rlondon3/Udagram-Udacity/tree/main)
-*
+<br>
+*See link below to verify this application successfully passed while deployed to AWS
+<br>
+https://app.circleci.com/pipelines/github/rlondon3/Udagram-Udacity/92/workflows/bcfab401-fdbf-404c-9722-e218c2bb2103/jobs/162/steps
 ____
 
